@@ -1,24 +1,23 @@
 // console.dir(document);
 // console.log(document);
 // console.log(document.images);
+//BY ID NAME
+
 // var title = document.getElementById("header-title");
 // var header = document.getElementById("main-header");
 // var title = document.getElementById("header-title");
-
 // console.log(title);
-// //title.textContent = "Welcome";
+// title.textContent = "Welcome";
 // title.innerText = "Welcome to Dom";
 // console.log(title);
 // header.style.borderBottom = "solid 4px #000";
-//BYCLASSNAME
-var item1 = document.getElementById("item1");
-var item2 = document.getElementById("item2");
-var item3 = document.getElementById("item3");
-var item4 = document.getElementById("item4");
 
-item3.style.backgroundColor="green";
-item3.style.fontWeight="bold";
-item1.style.fontWeight="bold";
-item2.style.fontWeight="bold";
-item4.style.fontWeight="bold";
+//BYCLASSNAME
+let items = document.getElementsByClassName("list-group-item");
+console.log(items);
+console.log(items[1]);
+for(let i=0;i<items.length;i++){
+    items[i].style.fontWeight="bold";
+}
+items[2].style.backgroundColor="green";
 
